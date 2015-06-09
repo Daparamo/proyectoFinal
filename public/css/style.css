@@ -1,0 +1,112 @@
+body
+{
+	 background: #ddd url(../img/bg.jpg) no-repeat; 
+	 color:white;	
+	 padding-bottom: 15px;
+	 
+}
+li
+{
+	text-align: left;	
+	color:rgb(62, 144, 191);
+}
+.like
+{
+	width: 20px;
+	height: 20px;	
+	border :3px ;
+	padding-right: 5px;	
+}
+.btnlike
+{	
+	background-color:rgb(62, 144, 191);
+	border-radius: 28px;	
+	border-radius:28px;
+	border:1px solid rgb(62, 144, 191);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;	
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:rgb(143, 208, 245);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+div
+{
+	text-align:center;
+	border: solid 1px #4194C6; 
+	border-radius: 5%;	
+	color: white;
+	background: rgba(30, 18, 58, 0.27);
+}
+#escudo
+{
+	width: 5%;
+}
+
+.comentarios
+{
+	border: none;
+	width: 40%;
+	height: 310px;
+	overflow-y: scroll;
+}
+
+.comentario
+{
+	width: 40%;
+
+}
+
+#txtArea
+{
+	width: 90%;
+}
+
+.comenta
+{
+	width: 40%;
+	border: 0px;
+}
+hr
+{	
+	color:rgba(30, 18, 58, 0.27);
+	background-color: rgba(30, 18, 58, 0.27);
+}
+#Nombre
+{
+	width: 90%;
+}
+#Enviar 
+{
+	background-color:#44c767;	
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:100%;
+	padding:7px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	size:60%;
+}
+#Enviar:hover 
+{
+	background-color:#5cbf2a;
+}
+#Enviar:active 
+{
+	position:relative;
+	top:3px;
+}
+
+        
