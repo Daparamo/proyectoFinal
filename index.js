@@ -1,10 +1,10 @@
-var express   = 	require("express"),
-	app		      = 	express(), 
-	cons 	      =	  require("consolidate"), 
-	puerto 	    = 	8081, 
-	bodyParser 	=   require('body-parser'),
-  http        =   require('http').Server(app),
-  MongoClient =   require("mongodb").MongoClient,db;
+var express   		= 	require("express"),
+	app		= 	express(), 
+	cons 	      	=	require("consolidate"), 
+	puerto 	    	= 	8081, 
+	bodyParser 	=   	require('body-parser'),
+  	http        	=   	require('http').Server(app),
+  	MongoClient 	=   	require("mongodb").MongoClient,db;
  
 
  var Fecha = new Date();
@@ -68,17 +68,18 @@ app.get('/like/:id', function(req, res)
     var query = {idcomentario : Number(req.param("id"))};
     var incrementa = {$inc : {"like" : 1}};
     var coleccion = db.collection("Comentarios");
-    coleccion.update(query,incrementa,function(err,actualiza){
-    var cursor = coleccion.find(query,{"_id" : false,"like" : true});
-    cursor.toArray(function(err, doc)
-  {
-    if(err)
+    coleccion.update(query,incrementa,function(err,actualiza)
     {
-      throw err;
-    }
-    res.json(doc);
-  });
-});
+	    var cursor = coleccion.find(query,{"_id" : false,"like" : true});
+	    cursor.toArray(function(err, doc)
+	    {
+		 if(err)
+		 {
+		      throw err;
+		 }
+		 res.json(doc);
+	    });
+    });
 });
 
 app.listen(puerto);
